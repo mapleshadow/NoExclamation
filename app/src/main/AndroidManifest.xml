@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="org.foxteam.noisyfox.noexclamation"
-          android:versionCode="7"
+          android:versionCode="8"
           android:versionName="@string/app_version_name">
 
     <application
@@ -10,8 +10,9 @@
         android:theme="@android:style/Theme.Material.Light.DarkActionBar"
         android:allowBackup="true">
         <activity
-            android:name="MyActivity"
-            android:label="@string/app_name">
+            android:name=".NewActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
